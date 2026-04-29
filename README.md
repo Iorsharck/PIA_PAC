@@ -1,5 +1,5 @@
 # PIA_PAC
-Suite con herraamienta de analisis estatico y analisis de red. Proyecto final de Programacion Avanzada para Ciberseguridad
+Suite con herramienta de analisis estatico y analisis de red. Proyecto final de Programacion Avanzada para Ciberseguridad
 # SecureWatch: Sistema de Auditoría e Integridad
 
 ## Información Académica
