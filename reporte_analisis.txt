@@ -1,4 +1,0 @@
-=== REPORTE DE INTEGRIDAD SECUREWATCH ===
-Archivo analizado: main.cpp
-Checksum: 0x14A9B
-Resultado: Integridad verificada.
