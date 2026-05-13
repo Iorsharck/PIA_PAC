@@ -1,34 +1,96 @@
 #include <iostream>
-#include "analizador.hpp" // Esto conecta el main con el modulo
+#include <limits>
 
-int main() {
+/*
+    Modulo de integridad
+*/
+#include "analizador.hpp"
+
+/*
+    Modulo de red
+*/
+#include "NetworkMonitor.hpp"
+
+int main()
+{
     int opcion = 0;
-    while (opcion != 3) {
+
+    while (opcion != 3)
+    {
         std::cout << "\n================================";
         std::cout << "\n    MENU SECUREWATCH - PIA      ";
         std::cout << "\n================================";
+
         std::cout << "\n1. Analizar Integridad (Estefani)";
         std::cout << "\n2. Modulo de Red (Jair)";
         std::cout << "\n3. Salir";
+
         std::cout << "\nOpcion: ";
-        
-        // Validacion para que el menu no se rompa si metes una letra
-        if (!(std::cin >> opcion)) {
+
+        /*
+            Validacion input
+        */
+
+        if (!(std::cin >> opcion))
+        {
             std::cin.clear();
-            std::cin.ignore(1000, '\n');
-            std::cout << "[!] Por favor, elige una opcion valida.\n";
+
+            std::cin.ignore(
+                std::numeric_limits<std::streamsize>::max(),
+                '\n'
+            );
+
+            std::cout
+                << "[!] Por favor, elige una opcion valida.\n";
+
             continue;
         }
 
-        if (opcion == 1) {
-            analizarArchivo(); // Llama a la funcion que esta en analizador.cpp
-        } else if (opcion == 2) {
-            std::cout << "\n[i] Modulo de Jair: Esperando integracion...\n";
-        } else if (opcion == 3) {
-            std::cout << "\nSaliendo del programa...\n";
-        } else {
-            std::cout << "\n[!] Opcion no valida.\n";
+        /*
+            OPCION 1
+        */
+
+        if (opcion == 1)
+        {
+            analizarArchivo();
+        }
+
+        /*
+            OPCION 2
+        */
+
+        else if (opcion == 2)
+        {
+            std::cout
+                << "\n[i] Iniciando modulo de monitoreo de red...\n";
+
+            /*
+                Llamada al modulo de red
+            */
+
+            NetMon::NetworkMonitor::run();
+        }
+
+        /*
+            OPCION 3
+        */
+
+        else if (opcion == 3)
+        {
+            std::cout
+                << "\nSaliendo del programa...\n";
+        }
+
+        /*
+            OPCION INVALIDA
+        */
+
+        else
+        {
+            std::cout
+                << "\n[!] Opcion no valida.\n";
         }
     }
+
     return 0;
 }
