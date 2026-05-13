@@ -24,5 +24,9 @@ NetworkMonitor.cpp \
 -lCommon++ \
 -lpcap
 
-#Ejecuion
+# Ejecuion
 sudo ./SecureWatch
+
+Capturas son ejecuccion1 y ejecucion 2
+
+
