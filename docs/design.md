@@ -10,5 +10,6 @@ Aquí nos enfocamos en la seguridad de los archivos. El programa abre los ejecut
 En este programa sniffea el trafico el trafico de la red, y analisa si hay un patron malicioso en la red, dandote al final recomendaciones sobre comandos o cosas que podrías hacer para accabar con este posible ataque, se tiene planeado que recomiende bloquear ciertas IPs, o poner ciertas reglas de firewall.
 
 # Dependencias
-Las dependencias por ahbora en lo que se lleva este proyecto son los siguientes:
-- *Llenar esto mientras se programa*
+Las dependencias por ahora en lo que se lleva este proyecto son los siguientes:
+- Libcap (windows)
+- Ncap (linux)
