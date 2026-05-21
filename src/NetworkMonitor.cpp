@@ -1,7 +1,3 @@
-/*
-    NetworkMonitor.cpp
-*/
-
 #define NETWORKMONITOR_EXPORTS
 
 #include "NetworkMonitor.hpp"
@@ -18,7 +14,6 @@
 #include <limits>
 
 #include <arpa/inet.h>
-
 #include "PcapLiveDeviceList.h"
 #include "PcapLiveDevice.h"
 #include "Packet.h"
@@ -26,15 +21,18 @@
 #include "TcpLayer.h"
 #include "UdpLayer.h"
 
+/*
+===================================================
+Hacemos la parte del loggs
+===================================================
+*/
+
+
 using namespace pcpp;
 
 namespace
 {
-    /*
-        ===================================================
-        LOGGER
-        ===================================================
-    */
+
 
     enum class LogLevel
     {
@@ -71,7 +69,7 @@ namespace
 
     /*
         ===================================================
-        ESTRUCTURAS
+        Estructuras del logger
         ===================================================
     */
 
@@ -95,23 +93,20 @@ namespace
         std::unordered_map<uint16_t, uint64_t> ports;
     };
 
-    /*
-        ===================================================
-        VARIABLES GLOBALES PRIVADAS
-        ===================================================
-    */
+
 
     std::unordered_map<std::string, TrafficStats> g_stats;
 
     std::vector<Alert> g_alerts;
 
-    std::mutex g_mutex;
-
     /*
         ===================================================
-        HELPERS
+        Usamos Mutex para buena medida al estar usando synhro o psoibles hilos para evitar  problemas
         ===================================================
     */
+
+    std::mutex g_mutex;
+
 
     std::string getTimestamp()
     {
@@ -151,7 +146,7 @@ namespace
 
     /*
         ===================================================
-        ANALISIS
+        Primero se analiza cuato se lee puertos o puertos sensibles como forma 
         ===================================================
     */
 
@@ -205,7 +200,7 @@ namespace
 
     /*
         ===================================================
-        CALLBACK
+        Tomar el paquete lo proesa y "desempaquetarlo" para su uso del analisis
         ===================================================
     */
 
@@ -277,9 +272,6 @@ namespace
                 stats.udpPackets++;
             }
 
-            /*
-                Threshold simple
-            */
 
             constexpr uint64_t TRAFFIC_THRESHOLD = 5000;
 
@@ -370,7 +362,7 @@ namespace
 
 /*
     ==========================================================
-    IMPLEMENTACION PUBLICA
+    Busqueda de las interfaces para el analisis
     ==========================================================
 */
 
