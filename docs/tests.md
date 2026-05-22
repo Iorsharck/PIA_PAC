@@ -25,12 +25,12 @@ NetworkMonitor.cpp \
 -lpcap
 
 
-### Ejecuion
+### Ejecucion
 sudo ./SecureWatchSinSimbolos.exe 
 sudo ./SecureWatchConSimbolos.exe 
 
 
-## Ressultado
+## Resultado
 Posibles resultados de la ejecucion del codigo  
 
 ### Salida de texto:
@@ -42,7 +42,7 @@ Posibles resultados de la ejecucion del codigo
 - security_audit.log *Analisis de archivo*
   
 ## Evidencias
-[Ejecucion de SecureWatch con Simbolos el analisis de red](PIA_PAC/docs/EvidenciaEjecucion1.png)
-[Ejecucion de SecureWatch sin Simbolos el analisis de interidad de archivo](PIA_PAC/docs/EvidenciaEjecucion2.png)
+[Ejecucion de SecureWatch con Simbolos el analisis de red](EvidenciaEjecucion1.png)
+[Ejecucion de SecureWatch sin Simbolos el analisis de interidad de archivo]EvidenciaEjecucion2.png)
 
 
