@@ -23,10 +23,21 @@ SecureWatch es una herramienta integral diseñada para el monitoreo de seguridad
 
 ## Dependencias
 
-## Compilación
+## Compilación (con simbolos)
+g++ -std=c++17 -g
+main.cpp
+analizador.cpp
+NetworkMonitor.cpp
+-o SecureWatch.exe
+-I/usr/local/include/pcapplusplus
+-lPcap++
+-lPacket++
+-lCommon++
+-lpcap
 
 ## Ejecución
-
+Linux: sudo ./SecureWatch.exe
+Windows: ejecutar como administrador el .exe
 ## Reporte final 
 *Enlace*
 
