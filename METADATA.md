@@ -1,6 +1,5 @@
 # VM Usada
-En ete proyecto se uso Kali Linux como VM de uso
-
+En ete proyecto se uso Kali Linux como VM de uso  
 Se adjunta el link para descargar el .zip encriptado para su descarga:
 
 # Herramientas usadas
