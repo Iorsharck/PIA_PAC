@@ -22,6 +22,8 @@ El objetivo de este programa es proveer una serie de herramientas unidas para qu
 SecureWatch es una herramienta integral diseñada para el monitoreo de seguridad en sistemas operativos Linux. El proyecto combina técnicas de análisis estático de binarios con monitoreo de tráfico en red para ofrecer una solución robusta de auditoría.
 
 ## Dependencias
+Windows: Libcap
+Linux: Ncap
 
 ## Compilación (con simbolos)
 g++ -std=c++17 -g
@@ -38,6 +40,7 @@ NetworkMonitor.cpp
 ## Ejecución
 Linux: sudo ./SecureWatch.exe
 Windows: ejecutar como administrador el .exe
+
 ## Reporte final 
 *Enlace*
 
