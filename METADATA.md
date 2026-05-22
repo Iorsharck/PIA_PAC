@@ -1,8 +1,9 @@
 # VM Usada
 En ete proyecto se uso Kali Linux como VM de uso  
-Se adjunta el link para descargar el .zip encriptado para su descarga:
+Se adjunta el link para descargar el .zip encriptado para su descarga:  
 
 # Snapshot ID
+"Snapshot Final"  
 
 # Herramientas usadas
 - Ghidra: 12.0.4
