@@ -1,32 +1,48 @@
-Compilado en Linux:
-
 # Comandos
-## Con simbolos
-g++ -std=c++17 -g \
+## Compilacion
+### Con simbolos
+g++ -std=c++17 -g  \             
 main.cpp \
 analizador.cpp \
 NetworkMonitor.cpp \
--o SecureWatch_Debug \
--I/usr/local/include/pcapplusplus \
--lPcap++ \
--lPacket++ \
--lCommon++ \
--lpcap
-## Sin simbvolos
-g++ -std=c++17 -O2 \
-main.cpp \
-analizador.cpp \
-NetworkMonitor.cpp \
--o SecureWatch \
+-o SecureWatchConSimbolos.exe \
 -I/usr/local/include/pcapplusplus \
 -lPcap++ \
 -lPacket++ \
 -lCommon++ \
 -lpcap
 
-# Ejecuion
-sudo ./SecureWatch
+### Sin simbolos
+g++ -std=c++17 -O2  \            
+main.cpp \
+analizador.cpp \
+NetworkMonitor.cpp \
+-o SecureWatchSinSimbolos.exe \
+-I/usr/local/include/pcapplusplus \
+-lPcap++ \
+-lPacket++ \
+-lCommon++ \
+-lpcap
 
-Capturas son ejecuccion1 y ejecucion 2
+
+### Ejecuion
+sudo ./SecureWatchSinSimbolos.exe 
+sudo ./SecureWatchConSimbolos.exe 
+
+
+## Ressultado
+Posibles resultados de la ejecucion del codigo  
+
+### Salida de texto:
+- Logs *Aanalisiis de red*
+
+### Archivos:
+- network_report.txt *Analisis de red*
+- reporte_analisis.txt *Aanalisis de archivo*
+- security_audit.log *Analisis de archivo*
+  
+## Evidencias
+[Ejecucion de SecureWatch con Simbolos el analisis de red](PIA_PAC/docs/EvidenciaEjecucion1.png)
+[Ejecucion de SecureWatch sin Simbolos el analisis de interidad de archivo](PIA_PAC/docs/EvidenciaEjecucion2.png)
 
 
