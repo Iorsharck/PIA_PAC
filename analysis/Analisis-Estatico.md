@@ -3,13 +3,13 @@ En este caso las exportaiones del programa no son muy importantes, ninguna en ex
 
 
 # Strings
-Se detectaron algunos strings, pese que no son de mucha utilidad en este especifico casoo, se pyuede notar que  los dos primeros son de un print, y el ultimo es la ejecuciion de uun comando interno de la libreria de red si hacemos educated guess, sin embargo tiene demasiado para ponerlo mas allla de lo que muestra el comando
-"-----END"
-"-----BEGINN
-"ascii   command -v nmcli >/dev/null 2>&1 || { echo 'nmcli not installed'"...
+Se detectaron algunos strings, pese que no son de mucha utilidad en este especifico casoo, se pyuede notar que  los dos primeros son de un print, y el ultimo es la ejecuciion de uun comando interno de la libreria de red si hacemos educated guess, sin embargo tiene demasiado para ponerlo mas allla de lo que muestra el comando  
+"-----END"  
+"-----BEGINN  
+"ascii   command -v nmcli >/dev/null 2>&1 || { echo 'nmcli not installed'"...  
 
 
 # Capturas
 
-[Captura al analisar lo exportado de Ghuidra](AnalisisGhidra.png)
+[Captura al analisar lo exportado de Ghuidra](AnalisisGhidra.png)  
 [Captura al analisar los strings en Radaware2](AnalisisRadaware2.png)
