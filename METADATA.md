@@ -1,6 +1,6 @@
 # VM Usada
 En ete proyecto se uso Kali Linux como VM de uso  
-Se adjunta el link para descargar el .zip encriptado para su descarga:  
+Se adjunta el link para descargar el .zip encriptado para su descarga:https://mega.nz/file/or52UaQA#q1JwMMVVtVO2WWnVvNjACp-Xxe-VFSIC1ObjuNxnZh4  
 
 # Snapshot ID
 "Snapshot Final"  
