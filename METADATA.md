@@ -1,2 +1,8 @@
 # VM Usada
 En ete proyecto se uso Kali Linux como VM de uso
+Se adjunta el link para descargar el .zip encriptado para su descarga:
+
+# Herramientas usadas
+- Ghidra 12.0.4
+- g++ 15.2.0
+- libcap: 1.10.6
