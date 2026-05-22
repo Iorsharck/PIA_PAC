@@ -1,0 +1,8 @@
+# Exportaciones completas
+
+# Strings
+
+# Capturas
+
+Lo que importa segu ghidra
+Radaware2 viendo strings y uno de ellos es un comando de linux
